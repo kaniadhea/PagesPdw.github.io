@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Day In My Life</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 10px;
+            background-color: #8FBC8F;
+            color: #000000;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 5px;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #F5F5DC;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .greeting {
+            order: 1; 
+        }
+
+        .datetime {
+            order: 2; 
+        }
+
+        @media (min-width: 768px) {
+            .header {
+                flex-direction: row;
+            }
+
+            .greeting,
+            .datetime {
+                flex-basis: auto; 
+                order: initial; 
+            }
+        }
+
+        .main-content .card-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 5px; 
+        }
+
+        .card {
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin: 5px;
+            width: calc(33.33% - 20px);
+            text-align: center;
+        }
+
+        .card-content {
+            position: relative;
+            overflow: hidden;
+            padding: 2px; 
+        }
+
+        .card-content img {
+            width: calc(100% - 10px);
+            height: auto;
+            margin: 0 auto; 
+        }
+
+        .jalanpagi-image,
+        .menyiram-image,
+        .makanpagi-image {
+            background-size: cover;
+            background-position: center;
+            width: 50px;
+            height: 100px;
+        }
+
+        .jalanpagi-image {
+            background-image: url('jalanpagi.jpg');
+        }
+
+        .menyiram-image {
+            background-image: url('menyiram.jpeg');
+            width: 400px;
+            height: 260px;
+        }
+
+        .makanpagi-image {
+            background-image: url('makanpagi-image');
+            width: 100px; 
+            height: 100px; 
+        }
+
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <div class="greeting">Selamat Pagi!</div>
+    <div class="datetime">30 April 2024 | 12:00 PM</div>
+</header>
+
+<div class="main-content">
+    <h2>Morning Routine</h2>
+    <div class="card-container" style="margin-top: 5px;"> 
+        <div class="card">
+            <div class="card-content">
+                <h3>Morning Walk</h3>
+                <img src="jln pagi.jpg">
+                <div class="jalanpagi-image"></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <h3>Water Plants</h3>
+                <div class="menyiram-image"></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <h3>Breakfast</h3>
+                <img src="Makan Pagi.png" alt="Breakfast">
+            </div>
+        </div>
+    </div>
+
+    <h2>Afternoon Activities</h2>
+    <div class="card-container" style="margin-top: 5px;"> 
+        <div class="card">
+            <div class="card-content">
+                <h3>Work Meeting</h3>
+                <img src="bekerja.png" alt="Work Meeting">
+            </div>
+        </div>
+    </div>
+
+    <h2>Evening Relaxation</h2>
+    <div class="card-container" style="margin-top: 5px;"> 
+        <div class="card">
+            <div class="card-content">
+                <h3>Dinner with Boyfriend</h3>
+                <img src="makan malam.png" alt="Dinner with Boyfriend">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <h3>Online Meeting</h3>
+                <img src="online.jpg" alt="Online Meeting">
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <p>&copy; 2024 A Day In My Life</p>
+</footer>
+
+</body>
+</html>
